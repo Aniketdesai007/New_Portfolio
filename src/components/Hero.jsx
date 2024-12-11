@@ -1,7 +1,6 @@
 import React from 'react'
 import {HERO_CONTENT} from '../constants/index.js'
 import {motion} from 'framer-motion'
-import { Container } from 'postcss'
 import img3 from '../assets/img3.jpg'
 
 const container=(delay)=>({
@@ -13,7 +12,6 @@ const container=(delay)=>({
     }
   }
 })
-
 
 const Hero = () => {
   return (
@@ -42,8 +40,8 @@ const Hero = () => {
             <motion.div initial={{x:100,opacity:0}}
             animate={{opacity:1,x:0}}
             transition={{duration:0.5 ,delay:1.2}}
-            className='felx justify-center mt-20 relative left-[25%] lg:left-5 md:left-[20%]  md:w-1/2 md:pl-[4rem]'>
-              <img src={img3} alt="img3"  className='rounded-full md:h-[300px] md:w-[300px] h-[250px] '/>
+            className='flex justify-center items-center mt-20 md:w-1/2 md:pl-[4rem] w-full'>
+              <img src={img3} alt="img3"  className='rounded-full md:h-[300px] md:w-[300px] h-[250px] mx-auto'/>
             </motion.div>
 
         </div>
