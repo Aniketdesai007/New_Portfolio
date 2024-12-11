@@ -20,7 +20,7 @@ function About() {
         
           className='flex items-center justify-center'>
 
-            <img src={img1} className='rounded-2xl md:h-[400px] md:w-[400px] h-[300px]' alt="" />
+            <img src={img1} className='rounded-2xl md:h-[400px] md:w-[400px] ' alt="" />
           </div>  </motion.div>
           <motion.div
           whileInView={{opacity:1,x:0}}
